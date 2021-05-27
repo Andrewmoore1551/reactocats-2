@@ -10,3 +10,86 @@ body {
   margin: 0;
   min-height: 100%;
 }
+
+header,
+header ul {
+  background-color: rgb(223, 213, 213);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(11, 10, 10);
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:git {
+  display: none;
+}
+
+header {
+  box-shadow: rgb(150, 150, 150);
+}
+
+.bigimg {
+  border: solid rgb(106, 104, 104);
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.littleimg {
+  height: 2em;
+  width: 2em;
+  align-content: center;
+  padding: 1em;
+}
+
+main {
+  border-top: 1.5em solid rgb(128, 126, 126);
+}
+
+main,
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main ul {
+  justify-content: space-between;
+}
+
+main li {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+footer {
+  padding: auto;
+  width: 100%;
+  background-color: rgb(199, 196, 196);
+}
+
+@media screen and (min-width: 800px) {
+  .git {
+    display: block;
+  }
+  .bigimg {
+    height: 15em;
+    width: 15em;
+  }
+}
